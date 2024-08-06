@@ -1,0 +1,399 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa; /* Light cyan background for the whole page */
+  color: #333; /* Dark text color for better readability */
+  transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+}
+
+/* Header Section */
+.header-bg {
+  height: 100vh;
+  background: url('https://visme.co/blog/wp-content/uploads/2019/10/animated-presentation-software-header.gif'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff; /* Set text color to white for contrast */
+  text-align: center;
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation for header content */
+}
+
+.header-content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  animation: slideUp 1s ease-in-out; /* Slide-up animation for header text */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Text shadow for better readability */
+}
+
+.header-content p {
+  font-size: 2rem;
+  color: #000; /* Lighter color for subtitle */
+}
+
+.header-content .btn {
+  margin-top: 20px;
+  background-color: #00796b; /* Teal button */
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth background color transition on hover */
+}
+
+.header-content .btn:hover {
+  background-color: #004d40; /* Darker teal on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Navbar */
+.navbar {
+  padding: 1rem;
+  background-color: #004d40; /* Teal background for the navbar */
+  transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+}
+
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #a5d6a7; /* Light green color on hover */
+}
+
+/* Introduction Section */
+.introduction-section {
+  color: #333; /* Dark text color */
+  background-color: #fff; /* White background for better contrast */
+  padding: 2rem 1rem; /* Responsive padding */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.introduction-section h2 {
+  color: #00796b; /* Teal color for section heading */
+  margin-bottom: 1rem;
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation for section heading */
+}
+
+/* Profile Picture */
+.profile-picture {
+  border-radius: 50%;
+  border: 5px solid #00796b; /* Teal border */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth scale and shadow effects */
+}
+
+.profile-picture:hover {
+  transform: scale(1.1); /* Slightly scale up on hover */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Shadow effect on hover */
+}
+/* Styling for the paragraph containing the resume link */
+.resume-text {
+  background-color: #00796b; /* Teal background color */
+  color: #fff; /* White text color */
+  padding: 10px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  display: inline-block; /* Adjust width to content */
+}
+
+.resume-text .btn {
+  background-color: #004d40; /* Darker teal background for button */
+  color: #fff; /* White text color */
+  text-decoration: none; /* Remove underline */
+  padding: 5px 10px; /* Padding inside the button */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.resume-text .btn:hover {
+  background-color: #00796b; /* Teal background on hover */
+}
+
+
+/* Key Skills Section */
+.key-skills-section {
+  background-color: #b2dfdb; /* Light teal background */
+  color: #333;
+  padding: 2rem 1rem; /* Responsive padding */
+}
+
+.skill-card {
+  margin: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and shadow effects */
+  border-radius: 10px; /* Rounded corners for skill cards */
+  background-color: #fff; /* White background for skill cards */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for skill cards */
+  perspective: 1000px; /* Perspective for 3D effect */
+}
+
+.skill-card img {
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Smooth scaling effect for images */
+}
+
+.skill-card:hover {
+  transform: scale(1.1); /* Slightly scale up on hover */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Enhanced shadow effect on hover */
+}
+
+/* Featured Projects Section */
+.featured-projects-section {
+  background-color: #e0f2f1; /* Very light green background */
+  color: #333;
+}
+
+.project-card {
+  margin: 15px;
+  padding: 2rem;
+  background-color: #fff; /* White background for project cards */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for project cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and shadow effects */
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+  background-color: #004d40; /* Dark teal background on hover */
+  color: #fff; /* White text color on hover */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Enhanced shadow effect on hover */
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #fff;
+  color: #333;
+  padding: 5rem 1rem; /* Responsive padding */
+}
+
+.contact-section h1 {
+  font-size: 2.5rem;
+  color: #00796b; /* Teal color for heading */
+  margin-bottom: 40px;
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.contact-section a.btn {
+  margin-top: 10px;
+  background-color: #00796b; /* Teal button */
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth background color transition on hover */
+}
+
+.contact-section a.btn:hover {
+  background-color: #004d40; /* Darker teal on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto; /* Center the form */
+  background-color: #e0f2f1; /* Very light green background for the form */
+  padding: 2rem; /* Add padding inside the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for the form */
+}
+
+.contact-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #00796b; /* Teal border for input fields */
+  border-radius: 5px;
+  background-color: #fff; /* White background for input fields */
+  color: #333; /* Dark text color */
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth focus effects */
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  border-color: #004d40;
+  box-shadow: 0 0 5px rgba(0,77,64,0.5);
+}
+.contact-link {
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* Remove underline */
+}
+
+.contact-link:hover {
+  color: #007bff; /* Change to your desired color */
+  text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+
+/* Footer */
+footer {
+  background-color: #004d40; /* Dark teal background */
+  color: #fff;
+  padding: 1rem;
+  text-align: center; /* Center text */
+}
+
+/* Back to Top Button */
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00796b; /* Teal background */
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth background color and scaling effects */
+}
+
+#back-to-top:hover {
+  background-color: #004d40; /* Darker teal on hover */
+  transform: scale(1.1); /* Slightly scale up on hover */
+}
+
+/* Hidden by default and smooth fade transition */
+.contact-form-container {
+  display: none; /* Initially hidden */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Display the form with smooth transition */
+.contact-form-container.show {
+  display: block;
+  opacity: 1;
+}
+
+/* 3D Effects */
+
+/* 3D Card Flip Effect */
+.card-container {
+  perspective: 1000px; /* Perspective for 3D effect */
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  transform: rotateY(180deg); /* Flip effect on hover */
+}
+
+.card .front, .card .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.card .front {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow */
+}
+
+.card .back {
+  background-color: #004d40; /* Dark teal background for back side */
+  color: #fff;
+  transform: rotateY(180deg); /* Flip back side for the 3D effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Media Queries */
+
+/* Tablet Devices */
+@media (max-width: 768px) {
+  .header-content h1 {
+    font-size: 3rem;
+  }
+
+  .header-content p {
+    font-size: 1.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.3rem 0.5rem;
+  }
+
+  .introduction-section, .key-skills-section, .contact-section {
+    padding: 1rem;
+  }
+
+  .contact-form {
+    padding: 1rem;
+  }
+
+  .project-card {
+    margin: 10px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .header-content h1 {
+    font-size: 2rem;
+  }
+
+  .header-content p {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.2rem 0.4rem;
+  }
+
+  .introduction-section, .key-skills-section, .contact-section {
+    padding: 0.5rem;
+  }
+
+  .contact-form {
+    padding: 0.5rem;
+  }
+
+  .project-card {
+    margin: 5px;
+  }
+
+  .skill-card {
+    margin: 10px 0;
+  }
+}
