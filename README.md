@@ -31,9 +31,9 @@ This is the repository for my personal portfolio website, showcasing my projects
 3. **Open `index.html` in your web browser to view the website.**
 
 ## Code Structure
-- `index.html`: The main HTML file containing the structure of the website.
-- `style.css`: The main CSS file for styling the website.
-- `script.js`: The main JavaScript file for adding interactivity.
+- `homepage.html`: The main HTML file containing the structure of the website.
+- `homepage.css`: The main CSS file for styling the website.
+- `homepage.js`: The main JavaScript file for adding interactivity.
 
 ## Customization
 ### Changing the Background Image
